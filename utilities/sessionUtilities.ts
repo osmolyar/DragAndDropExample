@@ -12,9 +12,9 @@ class utilities {
 
     static logOutOrReload() {
         try {
-            legacyBrowser._waitForZenPageReady();
+            // legacyBrowser._waitForZenPageReady();
             legacyBrowser._click('//div[@id="portalTitleMenuBox"]/a[contains(.,"Logout")]');
-            legacyBrowser._getText('[name=IRISUsername]',speed.slow)
+            // legacyBrowser._getText('[name=IRISUsername]',speed.slow)
             // legacyBrowser._acceptAlertIfPresent();
             // legacyBrowser._acceptAlertIfPresent();
         } catch (err) {

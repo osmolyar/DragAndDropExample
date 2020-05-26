@@ -12,6 +12,10 @@ Given(/^I navigate to the drag and drop demo page$/, function () {
     homepage.getPage("https://marcojakob.github.io/dart-dnd/basic/");
 });
 
-When(/^I drag the first document to the trash can$/, function () {
-    trashCanPage.dragAndDrop();
+When(/^I drag three documents to the trash can using Wdio$/, function () {
+    trashCanPage.dragAndDropWdio();
+});
+
+When(/^I drag three documents to the trash can using html-dnd$/, function () {
+    trashCanPage.dragAndDropHtmlDnD();
 });
