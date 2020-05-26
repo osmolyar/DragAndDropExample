@@ -10,8 +10,12 @@ Feature: Google search
     Given I navigate to the Google home page
 
     Scenario:
-      When I drag the Gmail link to the input box
+      When I drag the Gmail link to the input box using Wdio
       And I click the search button
+
+  Scenario:
+    When I drag the Gmail link to the input box using html-dnd
+    And I click the search button
 
 #  Scenario Outline: Search for <search1> followed by <search2> and click on result containing <result>  <id>
 #    When I search for text <search1>

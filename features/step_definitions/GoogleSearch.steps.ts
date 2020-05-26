@@ -4,13 +4,16 @@ let URL='https://google.com';
 import  HomePage from '../../pages/googleHome.page';
 let homepage=new HomePage();
 
-
 Given(/^I navigate to the Google home page$/, function () {
     homepage.getPage(URL);
 });
 
-When(/^I drag the Gmail link to the input box$/, function () {
-    homepage.dragAndDrop();
+When(/^I drag the Gmail link to the input box using Wdio$/, function () {
+    homepage.dragAndDropWdio();
+});
+
+When(/^I drag the Gmail link to the input box using html-dnd/, function () {
+    homepage.dragAndDropHTMLDnD();
 });
 
 When(/^I click the search button$/, function () {
