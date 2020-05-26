@@ -1,0 +1,31 @@
+
+
+{
+  "compilerOptions": {
+    "target": "es5",
+    "baseUrl": ".",
+    "outDir": "out",
+    "paths": {
+      "*": [
+        "./*"
+      ],
+      "src/*": [
+        "./src/*"
+      ]
+    },
+    "types": [
+      "node",
+      "@wdio/sync"
+    ],
+    "allowJs": true,
+    "checkJs": true,
+    "esModuleInterop": true,
+    "strict": false,
+    "downlevelIteration": true,
+    "typeRoots": [
+      "./common/declarations"
+    ],
+    "allowSyntheticDefaultImports": true
+  }
+}
+
